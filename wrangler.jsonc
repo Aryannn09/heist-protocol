@@ -1,0 +1,8 @@
+{
+ "name":"heist-protocol",
+ "main":"worker.mjs",
+ "compatibility_date":"2026-09-30",
+ "assets":{"directory":"./dist","binding":"ASSETS","run_worker_first":["/api/*"]},
+ "durable_objects":{"bindings":[{"name":"ROOMS","class_name":"HeistRoom"}]},
+ "migrations":[{"tag":"v1","new_sqlite_classes":["HeistRoom"]}]
+}
